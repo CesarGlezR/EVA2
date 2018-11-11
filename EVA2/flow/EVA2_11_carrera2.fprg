@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="temporal2"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2018-10-17 09:29:04 a. m."/>
+        <attribute name="created" value="dGVtcG9yYWwyO0xBQkExMzEwMTM7MjAxOC0xMC0xNzswOToyNDozNCBhLiBtLjsyOTQ2"/>
+        <attribute name="edited" value="dGVtcG9yYWwyO0xBQkExMzEwMTM7MjAxOC0xMC0xNzswOToyNDozNiBhLiBtLjsxO3RlbXBvcmFsMjtMQUJBMTMxMDEzOzIwMTgtMTAtMTc7MDk6MTc6MDggYS4gbS47RVZBMl8xMF9jYXJyZXJhLmZwcmc7Nzg5Mw=="/>
+        <attribute name="edited" value="dGVtcG9yYWwyO0xBQkExMzEwMTM7MjAxOC0xMC0xNzswOToyOTowNCBhLiBtLjsxOzMwNTY="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="materias" type="Boolean" array="False" size=""/>
+            <assign variable="materias" expression="true"/>
+            <declare name="servicio" type="Boolean" array="False" size=""/>
+            <assign variable="servicio" expression="true"/>
+            <declare name="residencias" type="Boolean" array="False" size=""/>
+            <assign variable="residencias" expression="true"/>
+            <if expression="(materias== true) &amp;&amp; (servicio==true) &amp;&amp; (residencias==true)">
+                <then>
+                    <output expression="&quot;Te titulas&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;No te titulas&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

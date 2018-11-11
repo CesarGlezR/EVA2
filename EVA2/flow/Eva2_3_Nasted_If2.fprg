@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Armando"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2018-11-10 05:33:26 PM"/>
+        <attribute name="created" value="QXJtYW5kbztERVNLVE9QLUIyUEhBRjQ7MjAxOC0xMC0wODswMzo0NToxNyBwLiBtLjszMjE2"/>
+        <attribute name="edited" value="QXJtYW5kbztERVNLVE9QLUIyUEhBRjQ7MjAxOC0xMC0wODswNDoxMTo0NiBwLiBtLjszOzMzMjI="/>
+        <attribute name="edited" value="RmFtRkc7Q0VTQVItR0FNRVI7MjAxOC0xMS0xMDswNTozMzoyNiBQTTsxOzI1Nzc="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <output expression="&quot;&#191;Cu&#225;l es tu calificaci&#243;n?&quot;" newline="True"/>
+            <declare name="iCalif" type="Integer" array="False" size=""/>
+            <input variable="iCalif"/>
+            <if expression="iCalif&gt;=90 &amp;&amp; iCalif&lt;=100">
+                <then>
+                    <output expression="&quot;Tienes una A&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="iCalif&gt;=80 &amp;&amp; iCalif&lt;=89">
+                        <then>
+                            <output expression="&quot;Tienes una B&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="iCalif&gt;=70 &amp;&amp; iCalif&lt;=79">
+                                <then>
+                                    <output expression="&quot;Tienes una C&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <if expression="iCalif&gt;=60 &amp;&amp; iCalif&lt;=69">
+                                        <then>
+                                            <output expression="&quot;Tienes una D&quot;" newline="True"/>
+                                        </then>
+                                        <else>
+                                            <if expression="iCalif&gt;=50 &amp;&amp; iCalif&lt;=59">
+                                                <then>
+                                                    <output expression="&quot;Tienes una F&quot;" newline="True"/>
+                                                </then>
+                                                <else>
+                                                    <output expression="&quot;numero no valido&quot;" newline="True"/>
+                                                </else>
+                                            </if>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
